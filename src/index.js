@@ -38,7 +38,6 @@
     if (currentImg === sliderImages.length - 1) {
       currentImg = -1;
     }
-
     toRight();
   });
 
