@@ -127,6 +127,14 @@ h2 {
   padding: 10px 0;
 }
 
+.section:nth-child(2n) {
+  flex-direction: row-reverse;
+}
+
+.section:nth-child(2n) .section-photo {
+  right: 20px;
+}
+
 .section h3 {
   margin: 10px;
   font-size: 55px;
@@ -292,6 +300,15 @@ h2 {
   }
 
   .section-photo {
+    height: 300px;
+    right: 0;
+  }
+
+  .section:nth-child(2n) {
+    flex-direction: column;
+  }
+
+  .section:nth-child(2n) .section-photo {
     height: 300px;
     right: 0;
   }
