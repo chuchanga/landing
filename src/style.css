@@ -67,8 +67,10 @@ a:hover {
 
 .text-parallax {
   position: absolute;
-  top: 0;
-  margin-top: 150px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  top: 150px;
   padding: 0 200px;
 }
 
@@ -82,26 +84,27 @@ a:hover {
 
 .button-parallax {
   outline: none;
-  background-color: var(--colorHover);
+  background: var(--colorHover);
   border-radius: 20px;
   border: none;
-  -moz-box-shadow: 0 5px 0 0 rgb(0, 105, 202);
-  -webkit-box-shadow: 0 5px 0 0 rgb(0, 105, 202);
-  box-shadow: 0 5px 0 0 rgb(0, 105, 202);
+  -moz-box-shadow: 0 5px 0 0;
+  -webkit-box-shadow: 0 5px 0 0;
+  box-shadow: 0 5px 0 0;
   transition: all 0.1s ease-in-out;
   -webkit-transition: all 0.1s ease-in-out;
-  margin: 0 10px 10px 0;
-  padding: 10px;
+  width: 200px;
+  padding: 2px;
+}
+
+.button-parallax a {
+  text-decoration: none;
+  color: var(--bg);
 }
 
 .button-parallax:active {
-  -moz-box-shadow: 0 1px 0 0 rgb(0, 105, 202);
-  -webkit-box-shadow: 0 1px 0 0 rgb(0, 105, 202);
-  box-shadow: 0 1px 0 0 rgb(0, 105, 202);
-}
-
-.button-parallax:hover {
-  cursor: pointer;
+  -moz-box-shadow: 0 1px 0 0;
+  -webkit-box-shadow: 0 1px 0 0;
+  box-shadow: 0 1px 0 0;
 }
 
 .hidden {
@@ -234,5 +237,45 @@ a:hover {
 
   .bg-footer p {
     font-size: 10px;
+  }
+}
+
+@media (max-width: 1280px) {
+  .logo {
+    width: 90px;
+    height: 80px;
+    margin-top: 5px;
+  }
+
+  .parallax {
+    width: 100%;
+  }
+
+  .text-parallax {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 60px;
+  }
+
+  .text-parallax h1 {
+    font-size: 40px;
+  }
+
+  .text-parallax p {
+    font-size: 25px;
+  }
+
+  .button-parallax {
+    width: 200px;
+    border-radius: 10px;
+  }
+
+  .button-parallax p {
+    font-size: 20px;
+  }
+
+  header {
+    background-position: center;
   }
 }
