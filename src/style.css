@@ -1,0 +1,116 @@
+@import "https://use.fontawesome.com/releases/v5.15.2/css/all.css";
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@300;700&display=swap");
+
+:root {
+  --bg: #0a0c09;
+  --colorText: #f3f3f3;
+  --colorHover: #fad000;
+  --bg-section: #e6a503;
+}
+
+body {
+  font-family: "Nunito";
+}
+
+.header {
+  background-color: var(--bg);
+}
+
+.menu-bar {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.menu-items {
+  display: grid;
+  grid-auto-flow: column;
+  grid-column-gap: 30px;
+  list-style: none;
+  padding: 20px;
+  margin: 10px;
+  font-size: 20px;
+}
+
+.menu-items a {
+  text-decoration: none;
+  color: var(--colorText);
+}
+
+.menu-items .icon {
+  display: none;
+}
+
+a:hover {
+  color: var(--colorHover);
+}
+
+.logo {
+  margin: auto;
+  margin-left: 10px;
+  width: 100px;
+  height: 100px;
+  cursor: pointer;
+}
+
+.hidden {
+  visibility: hidden;
+}
+
+@media (max-width: 992px) {
+  .menu-items {
+    display: flex;
+    flex-direction: column;
+    color: var(--colorHover);
+    padding: 20px;
+    margin-left: 20px;
+  }
+
+  .hidden {
+    visibility: visible;
+  }
+
+  .respmenu input[type="checkbox"],
+  .respmenu .fa-bars,
+  .respmenu .fa-times {
+    position: absolute;
+    box-sizing: border-box;
+    padding: 0;
+    right: 0;
+    top: 0;
+    margin: 32px;
+    cursor: pointer;
+  }
+
+  .respmenu .fa-bars,
+  .respmenu .fa-times {
+    font-size: 24px;
+    pointer-events: none;
+  }
+
+  .respmenu input[type="checkbox"] {
+    opacity: 0;
+  }
+
+  .respmenu {
+    -webkit-box-shadow: 0 10px 13px -7px #000, 5px 5px 15px 5px rgba(0, 0, 0, 0);
+    box-shadow: 0 10px 13px -7px #000, 5px 5px 15px 5px rgba(0, 0, 0, 0);
+    color: white;
+    position: relative;
+  }
+
+  .respmenu nav {
+    display: none;
+  }
+
+  .respmenu input:checked ~ nav {
+    display: block;
+  }
+
+  .respmenu input:checked ~ .fa-bars {
+    display: none;
+  }
+
+  .respmenu input:not(:checked) ~ .fa-times {
+    display: none;
+  }
+}
