@@ -273,6 +273,106 @@ h2 {
   margin-right: 30px;
 }
 
+.form-contact {
+  width: 500px;
+  margin: auto;
+  padding: 30px;
+  background-color: var(--colorHover);
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 30px;
+}
+
+.form-components {
+  background-color: white;
+  border-radius: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 500px;
+  font-size: 15px;
+  filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.form-components #name {
+  outline: none;
+  width: 300px;
+  margin-top: 10px;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.form-components #first_name {
+  outline: none;
+  width: 300px;
+  margin-top: 10px;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.form-components #last_name {
+  outline: none;
+  width: 300px;
+  margin-top: 10px;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.form-components #emailAddress {
+  outline: none;
+  width: 300px;
+  margin-top: 10px;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.form-components #textArea {
+  outline: none;
+  width: 300px;
+  margin-top: 30px;
+  border-radius: 5px;
+  border: none;
+  filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.25));
+  padding: 20px;
+}
+
+.form-components #btn-submit {
+  outline: none;
+  width: 100px;
+  margin-top: 40px;
+  padding: 20px;
+  border-radius: 5px;
+  background-color: var(--colorHover);
+  cursor: pointer;
+  border: none;
+  -moz-box-shadow: 0 5px 0 0;
+  -webkit-box-shadow: 0 5px 0 0;
+  box-shadow: 0 5px 0 0;
+  transition: all 0.1s ease-in-out;
+  -webkit-transition: all 0.1s ease-in-out;
+  display: inline-block;
+  padding: 20px;
+}
+
+.form-components #btn-submit:active {
+  top: 4px;
+  -moz-box-shadow: 0 1px 0 0;
+  -webkit-box-shadow: 0 1px 0 0;
+  box-shadow: 0 1px 0 0;
+}
+
+.form-components #btn-submit:hover {
+  cursor: pointer;
+  background-color: var(--colorHover);
+}
+
 .bg-footer {
   color: var(--colorText);
   text-align: center;
