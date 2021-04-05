@@ -4,8 +4,8 @@
 :root {
   --bg: #0a0c09;
   --colorText: #f3f3f3;
-  --colorHover: #fad000;
-  --bg-section: #e6a503;
+  --colorHover: #ffe45c;
+  --bg-section: #fad000;
 }
 
 body {
@@ -75,11 +75,11 @@ a:hover {
 }
 
 .text-parallax h1 {
-  font-size: 64px;
+  font-size: 60px;
 }
 
 .text-parallax p {
-  font-size: 25px;
+  font-size: 30px;
 }
 
 .button-parallax {
@@ -111,63 +111,47 @@ a:hover {
   visibility: hidden;
 }
 
-@media (max-width: 992px) {
-  .menu-items {
-    display: flex;
-    flex-direction: column;
-    color: var(--colorHover);
-    padding: 20px;
-    margin-left: 20px;
-  }
+h2 {
+  color: var(--bg-hd-ft-text);
+  text-align: center;
+  font-size: 58px;
+}
 
-  .hidden {
-    visibility: visible;
-  }
+.section {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 1480px;
+  margin: auto;
+  padding: 10px 0;
+}
 
-  .respmenu input[type="checkbox"],
-  .respmenu .fa-bars,
-  .respmenu .fa-times {
-    position: absolute;
-    box-sizing: border-box;
-    padding: 0;
-    right: 0;
-    top: 0;
-    margin: 32px;
-    cursor: pointer;
-  }
+.section h3 {
+  margin: 10px;
+  font-size: 55px;
+  text-align: center;
+}
 
-  .respmenu .fa-bars,
-  .respmenu .fa-times {
-    font-size: 24px;
-    pointer-events: none;
-  }
+.section p {
+  font-size: 50px;
+  color: var(--bg);
+}
 
-  .respmenu input[type="checkbox"] {
-    opacity: 0;
-  }
+.section-photo {
+  position: relative;
+  z-index: 1;
+  right: -20px;
+  width: 50%;
+  height: 500px;
+  object-fit: cover;
+}
 
-  .respmenu {
-    -webkit-box-shadow: 0 10px 13px -7px #000, 5px 5px 15px 5px rgba(0, 0, 0, 0);
-    box-shadow: 0 10px 13px -7px #000, 5px 5px 15px 5px rgba(0, 0, 0, 0);
-    color: white;
-    position: relative;
-  }
-
-  .respmenu nav {
-    display: none;
-  }
-
-  .respmenu input:checked ~ nav {
-    display: block;
-  }
-
-  .respmenu input:checked ~ .fa-bars {
-    display: none;
-  }
-
-  .respmenu input:not(:checked) ~ .fa-times {
-    display: none;
-  }
+.section-text {
+  width: 50%;
+  text-align: center;
+  padding: 30px;
+  background-color: var(--bg-section);
 }
 
 .bg-footer {
@@ -240,7 +224,90 @@ a:hover {
   }
 }
 
+@media (max-width: 992px) {
+  .menu-items {
+    display: flex;
+    flex-direction: column;
+    color: var(--colorHover);
+    padding: 20px;
+    margin-left: 20px;
+  }
+
+  .hidden {
+    visibility: visible;
+  }
+
+  .respmenu input[type="checkbox"],
+  .respmenu .fa-bars,
+  .respmenu .fa-times {
+    position: absolute;
+    box-sizing: border-box;
+    padding: 0;
+    right: 0;
+    top: 0;
+    margin: 32px;
+    cursor: pointer;
+  }
+
+  .respmenu .fa-bars,
+  .respmenu .fa-times {
+    font-size: 24px;
+    pointer-events: none;
+  }
+
+  .respmenu input[type="checkbox"] {
+    opacity: 0;
+  }
+
+  .respmenu {
+    -webkit-box-shadow: 0 10px 13px -7px #000, 5px 5px 15px 5px rgba(0, 0, 0, 0);
+    box-shadow: 0 10px 13px -7px #000, 5px 5px 15px 5px rgba(0, 0, 0, 0);
+    color: white;
+    position: relative;
+  }
+
+  .respmenu nav {
+    display: none;
+  }
+
+  .respmenu input:checked ~ nav {
+    display: block;
+  }
+
+  .respmenu input:checked ~ .fa-bars {
+    display: none;
+  }
+
+  .respmenu input:not(:checked) ~ .fa-times {
+    display: none;
+  }
+}
+
 @media (max-width: 1280px) {
+  .section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .section-photo {
+    height: 300px;
+    right: 0;
+  }
+
+  h2 {
+    font-size: 40px;
+  }
+
+  .section h3 {
+    font-size: 30px;
+  }
+
+  .section p {
+    font-size: 20px;
+  }
+
   .logo {
     width: 90px;
     height: 80px;
