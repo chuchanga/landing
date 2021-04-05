@@ -12,13 +12,22 @@ body {
   font-family: "Nunito";
 }
 
-.header {
-  background-color: var(--bg);
+header {
+  z-index: 99;
+  background-image: url("https://www.redcross.org/on/demandware.static/-/Sites-RedCross-Library/default/dwbd2db3b6/images/Coronavirus/2020.05.19-coronavirus-Safe-Work-Practices_1000x550.jpg");
+  background-size: cover;
+  height: 600px;
+  background-repeat: no-repeat;
+  padding: 40px 0;
+  transition: background 0.5s ease;
+  text-align: center;
 }
 
 .menu-bar {
+  background-color: rgba(0, 0, 0, 0.8);
   display: flex;
   justify-content: flex-end;
+  margin-top: -40px;
 }
 
 .menu-items {
@@ -49,6 +58,49 @@ a:hover {
   margin-left: 10px;
   width: 100px;
   height: 100px;
+  cursor: pointer;
+}
+
+.parallax {
+  text-align: center;
+}
+
+.text-parallax {
+  position: absolute;
+  top: 0;
+  margin-top: 150px;
+  padding: 0 200px;
+}
+
+.text-parallax h1 {
+  font-size: 64px;
+}
+
+.text-parallax p {
+  font-size: 25px;
+}
+
+.button-parallax {
+  outline: none;
+  background-color: var(--colorHover);
+  border-radius: 20px;
+  border: none;
+  -moz-box-shadow: 0 5px 0 0 rgb(0, 105, 202);
+  -webkit-box-shadow: 0 5px 0 0 rgb(0, 105, 202);
+  box-shadow: 0 5px 0 0 rgb(0, 105, 202);
+  transition: all 0.1s ease-in-out;
+  -webkit-transition: all 0.1s ease-in-out;
+  margin: 0 10px 10px 0;
+  padding: 10px;
+}
+
+.button-parallax:active {
+  -moz-box-shadow: 0 1px 0 0 rgb(0, 105, 202);
+  -webkit-box-shadow: 0 1px 0 0 rgb(0, 105, 202);
+  box-shadow: 0 1px 0 0 rgb(0, 105, 202);
+}
+
+.button-parallax:hover {
   cursor: pointer;
 }
 
