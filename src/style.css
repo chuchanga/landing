@@ -114,3 +114,73 @@ a:hover {
     display: none;
   }
 }
+
+.bg-footer {
+  color: var(--colorText);
+  text-align: center;
+  background-color: var(--bg);
+}
+
+.bg-footer h3 {
+  font-size: 40px;
+}
+
+.bg-footer p {
+  font-size: 15px;
+}
+
+.icon-social {
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.icons {
+  color: var(--colorText);
+}
+
+.icon-social i {
+  transition: transform 0.5s;
+}
+
+.icon-social i:hover {
+  transform: scale(1.2);
+}
+
+.fab {
+  margin: 50px;
+  font-size: 30px;
+}
+
+.fa-facebook:hover {
+  color: #4267b2;
+}
+
+.fa-twitter:hover {
+  color: #1da1f2;
+}
+
+.fa-youtube:hover {
+  color: red;
+}
+
+.fa-linkedin:hover {
+  color: #027fb5;
+}
+
+@media (max-width: 772px) {
+  .icon-social {
+    display: flex;
+    flex-direction: column;
+    font-size: 15px;
+    margin-top: -50px;
+  }
+
+  .bg-footer h3 {
+    font-size: 25px;
+  }
+
+  .bg-footer p {
+    font-size: 10px;
+  }
+}
