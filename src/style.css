@@ -335,6 +335,11 @@ h2 {
   transition: 0.3s ease all;
 }
 
+#textarea {
+  width: 350px;
+  height: 200px;
+}
+
 .form__input:focus {
   border: 3px solid #0075ff;
   outline: none;
@@ -394,7 +399,7 @@ h2 {
 }
 
 .form-contact {
-  width: 600px;
+  width: 500px;
   margin: auto;
   padding: 30px;
   background-color: var(--colorHover);
@@ -470,6 +475,20 @@ h2 {
   .bg-footer p {
     font-size: 10px;
   }
+
+  .about-content {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .about-content p {
+    font-size: 20px;
+  }
+
+  .description-about h3 {
+    text-align: center;
+    font-size: 15px;
+  }
 }
 
 @media (max-width: 992px) {
@@ -541,6 +560,24 @@ h2 {
   .team {
     display: flex;
     flex-direction: column;
+  }
+
+  .form-contact {
+    width: 300px;
+    padding: 60px;
+  }
+
+  .form__input {
+    width: 300px;
+  }
+
+  #form__message {
+    font-size: 20px;
+  }
+
+  #textarea {
+    width: 300px;
+    height: 100px;
   }
 }
 
