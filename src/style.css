@@ -12,6 +12,10 @@ body {
   font-family: "Nunito";
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 header {
   z-index: 99;
   background-image: url("https://www.redcross.org/on/demandware.static/-/Sites-RedCross-Library/default/dwbd2db3b6/images/Coronavirus/2020.05.19-coronavirus-Safe-Work-Practices_1000x550.jpg");
@@ -695,6 +699,6 @@ h2 {
   animation: fade-in 1.4s;
 }
 
-.hidden {
-  opacity: 0;
+.invisible {
+  visibility: hidden;
 }
