@@ -273,104 +273,133 @@ h2 {
   margin-right: 30px;
 }
 
+.form__label {
+  display: block;
+  font-weight: 700;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.form__group {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-radius: 30px;
+  align-items: center;
+  filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.form__group-input {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+}
+
+.form__btn {
+  width: 100px;
+  margin: 20px;
+  padding: 20px;
+  background: var(--bg);
+  color: var(--colorText);
+  font-weight: bold;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: 0.1s ease all;
+}
+
+.form__btn:hover {
+  box-shadow: 3px 0 30px rgba(163, 163, 163, 1);
+}
+
+.form__message,
+.form__group-btn-submit {
+  grid-column: span 2;
+}
+
+.form__message-correct {
+  font-size: 14px;
+  color: #119200;
+  display: none;
+}
+
+.form__message-correct-active {
+  display: block;
+}
+
+.form__input {
+  width: 300px;
+  border: 3px solid transparent;
+  height: 45px;
+  transition: 0.3s ease all;
+}
+
+.form__input:focus {
+  border: 3px solid #0075ff;
+  outline: none;
+  box-shadow: 3px 0 30px rgba(163, 163, 163, 0.4);
+}
+
+.form__input-error {
+  font-size: 15px;
+  margin-bottom: 0;
+  display: none;
+}
+
+.form__message {
+  background: #f66060;
+  margin: 20px;
+  padding: 20px;
+  border-radius: 3px;
+  display: none;
+}
+
+.form__message-active {
+  display: block;
+}
+
+.form__message p {
+  margin: 0;
+}
+
+.form__validate-state {
+  right: 10px;
+  bottom: 15px;
+  z-index: 100;
+  font-size: 16px;
+  opacity: 0;
+}
+
+.form__input-error-active {
+  display: block;
+}
+
+.form__group-correct .form__validate-state {
+  color: #1ed12d;
+  opacity: 1;
+}
+
+.form__group-incorrect .form__label {
+  color: #bb2929;
+}
+
+.form__group-incorrect .form__validate-state {
+  color: #bb2929;
+  opacity: 1;
+}
+
+.form__group-incorrect .form__input {
+  border: 3px solid #bb2929;
+}
+
 .form-contact {
-  width: 500px;
+  width: 600px;
   margin: auto;
   padding: 30px;
   background-color: var(--colorHover);
   box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 30px;
-}
-
-.form-components {
-  background-color: white;
-  border-radius: 30px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 500px;
-  font-size: 15px;
-  filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.25));
-}
-
-.form-components #name {
-  outline: none;
-  width: 300px;
-  margin-top: 10px;
-  padding: 10px;
-  border-radius: 5px;
-  border: none;
-  filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.25));
-}
-
-.form-components #first_name {
-  outline: none;
-  width: 300px;
-  margin-top: 10px;
-  padding: 10px;
-  border-radius: 5px;
-  border: none;
-  filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.25));
-}
-
-.form-components #last_name {
-  outline: none;
-  width: 300px;
-  margin-top: 10px;
-  padding: 10px;
-  border-radius: 5px;
-  border: none;
-  filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.25));
-}
-
-.form-components #emailAddress {
-  outline: none;
-  width: 300px;
-  margin-top: 10px;
-  padding: 10px;
-  border-radius: 5px;
-  border: none;
-  filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.25));
-}
-
-.form-components #textArea {
-  outline: none;
-  width: 300px;
-  margin-top: 30px;
-  border-radius: 5px;
-  border: none;
-  filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.25));
-  padding: 20px;
-}
-
-.form-components #btn-submit {
-  outline: none;
-  width: 100px;
-  margin-top: 40px;
-  padding: 20px;
-  border-radius: 5px;
-  background-color: var(--colorHover);
-  cursor: pointer;
-  border: none;
-  -moz-box-shadow: 0 5px 0 0;
-  -webkit-box-shadow: 0 5px 0 0;
-  box-shadow: 0 5px 0 0;
-  transition: all 0.1s ease-in-out;
-  -webkit-transition: all 0.1s ease-in-out;
-  display: inline-block;
-  padding: 20px;
-}
-
-.form-components #btn-submit:active {
-  top: 4px;
-  -moz-box-shadow: 0 1px 0 0;
-  -webkit-box-shadow: 0 1px 0 0;
-  box-shadow: 0 1px 0 0;
-}
-
-.form-components #btn-submit:hover {
-  cursor: pointer;
-  background-color: var(--colorHover);
 }
 
 .bg-footer {
