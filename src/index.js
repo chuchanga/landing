@@ -64,7 +64,7 @@
         element.classList.add("fade-in-element");
         element.classList.remove("hidden");
 
-        elements = elements.filter((item) => element != item);
+        elements = elements.filter((item) => element !== item);
         if (elements.length <= 0) {
           window.removeEventListener("scroll", checkPosition);
           window.removeEventListener("resize", init);
