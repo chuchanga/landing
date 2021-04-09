@@ -1,5 +1,6 @@
 @import "https://use.fontawesome.com/releases/v5.15.2/css/all.css";
 @import url("https://fonts.googleapis.com/css2?family=Nunito:wght@300;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
 
 :root {
   --bg: #0a0c09;
@@ -9,7 +10,17 @@
 }
 
 body {
-  font-family: sans-serif, "Nunito";
+  margin: 0;
+  font-family: "Lato", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Nunito", sans-serif;
 }
 
 html {
@@ -115,10 +126,30 @@ a:hover {
   visibility: hidden;
 }
 
+.text-photo p {
+  text-shadow:
+    -1px 0 5px #c2c2c2,
+    1px 0 5px #c2c2c2;
+}
+
 h2 {
   color: var(--bg);
   text-align: center;
   font-size: 58px;
+  text-decoration: 5px underline gold;
+
+  /* border-bottom: 5px solid gold */
+}
+
+.specific-center {
+  display: flex;
+  justify-content: center;
+}
+
+.specific-text {
+  font-size: 32px;
+  text-align: center;
+  max-width: 900px;
 }
 
 .section {
@@ -164,6 +195,11 @@ h2 {
   text-align: center;
   padding: 30px;
   background-color: var(--bg-section);
+}
+
+.section-text p {
+  font-size: 28px;
+  padding: 0 40px;
 }
 
 .about-content {
