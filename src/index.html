@@ -4,10 +4,11 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Landing page destianada a ayudar a personas a adentrarse en el mundo laboral" />
     <link rel="shortcut icon" href="assets/logo.png" />
     <link rel="stylesheet" href="./style.css" />
     <script src="./index.js" type="module"></script>
-    <title>CanaryLinked</title>
+    <title>Landing Page de orientación y búsqueda laboral</title>
   </head>
   <body>
     <header>
@@ -15,8 +16,10 @@
           <img class="logo" src="assets/logo.png" alt="logo" />
           <div class="respmenu ">
             <input type="checkbox"/>
-            <i class="  fas fa-bars"></i>
-            <i class=" fas fa-times"></i>
+            <div class="icon-responsive">
+              <i class="  fas fa-bars"></i>
+              <i class=" fas fa-times"></i>
+            </div>
             <nav>
               <ul class="menu-items" >
                 <li><a href="#orientation">Servicios</a></li>
@@ -25,14 +28,14 @@
                 <li><a href="#contact">Contacto</a></li>
               </ul>
             </nav>
-            </div>
+          </div>
         </div>
     </header>
     <main>
     <section class="parallax">
       <div class="text-parallax">
         <div class="text-photo">
-          <h1>CanaryLinked</h1>
+          <h1>Bienvenidos a CanaryLinked</h1>
           <p>Empieza tu carrera profesional con nosotros</p>
         </div>
         <div class="button-parallax">
@@ -46,22 +49,21 @@
   <section id="orientation" class="section hidden">
     <img class="section-photo" src="./assets/orientation.jpg" alt="Foto de una persona que necesita orientación laboral" />
     <div class="section-text">
-      <h2>Servicios de orientación laboral</h2>
+      <h3>Servicios de orientación laboral</h3>
       <p>Explora consejos y tips para familiarizarte en el mundo laboral</p>
     </div>
   </section>
   <section id="tablon" class="section hidden">
     <img class="section-photo" src="./assets/team.jpg" alt="Foto de varias personas que trabajan en un proyecto" />
     <div class="section-text">
-      <h2>Tablón Formativo</h2>
+      <h3>Tablón Formativo</h3>
       <p>
         Encuentra las ofertas que mejor se adapten a tus necesidades y/o conecta con profesionales y aprende a desenvolverte en proyectos
         reales
       </p>
     </div>
   </section>
-  <h2>Sobre Nosotros</h2>
-  <a name="about"></a>
+  <h2 id="about">Sobre Nosotros</h2>
   <section class="about-us hidden">
     <div class="description-about">
       <div class="specific-center">
@@ -118,34 +120,33 @@
    <h2>Nuestro Equipo</h2>
         <section class="team hidden">
           <div class="employee">
-            <h3>Saúl José Abreu Ruiz</h3>
+            <h3>Desarrollador web</h3>
             <img class="photo-about" src="./assets/saul.jpeg" alt="Foto de una persona que trabaja para CanaryLinked"/>
-            <p>Desarrollador FullStack</p>
+            <p>Saúl José Abreu Ruiz</p>
           </div>
           <div class="employee">
-            <h3>Aythami De Armas Castellano</h3>
+            <h3>Periodista</h3>
             <img class="photo-about" src="./assets/aythami.jpg" alt="Foto de una persona que trabaja para CanaryLinked" />
-            <p>Periodista</p>
+            <p>Aythami De Armas Castellano</p>
           </div>
           <div class="employee">
-            <h3>Lucía Muñoz González</h3>
+            <h3>Coaching</h3>
             <img class="photo-about" src="./assets/lucia.jpg" alt="Foto de una persona que trabaja para CanaryLinked"/>
-            <p>Coaching</p>
+            <p>Lucía Muñoz González</p>
           </div>
         </section>
         <h2>Lo que dicen nuestros profesionales</h2>
-        <!--Comentarios-->
         <section class="wrapper hidden">
           <div class="slider" >
             <div id="left-arrow" class="arrow"></div>
             <div class="slider-item">
               <div class="slider-item-container">
-                <img class="image image-one" src="assets/img1.jpg" alt="Foto de una persona comentando lo que le ha parecido la página" />
-                  <span>
+                <img class="image image-one" src="assets/photo-comment1.jpg" alt="Foto de una persona comentando lo que le ha parecido la página" />
+                  <p>
                     Gracias a este portal, he encontrado el trabajo que siempre he
                     querido. Gracias a todos los profesionales que hay detrás del
                     programa.
-                  </span>
+                  </p>
                   <p>-Sergio Peñate</p>
                   <div>
                     <i class="fas fa-star"></i>
@@ -158,12 +159,11 @@
               </div>
               <div class="slider-item">
                 <div class="slider-item-container">
-                  <img class="image image-two" src="assets/img2.jpg" alt="Foto de una persona comentando lo que le ha parecido la página"/>
-                  <span>
+                  <img class="image image-two" src="assets/photo-comment2.jpg" alt="Foto de una persona comentando lo que le ha parecido la página"/>
+                  <p>
                     Este portal me ha ayudado muchísimo para encontrar mi primer
                     trabajo, gracias por las sesiones de orientación laboral y
-                    consejos.</span
-                  >
+                    consejos.</p>
                   <p>-Daniela Pérez</p>
                   <div>
                     <i class="fas fa-star"></i>
@@ -176,10 +176,8 @@
             </div>
           <div id="right-arrow" class="arrow"></div>
         </section>
-        <h2>Contacta con nosotros</h2>
+        <h2 id="contact">Contacta con nosotros</h2>
         <section class="form-contact hidden" >
-          <a name="contact"></a>
-     
           <form
             id="form"
             class="form-components "
@@ -193,7 +191,7 @@
             <input type="text" class="form__input" name="name" id="name"  />
             <i class="form__validate-state fas fa-times-circle"></i>
           </div>
-          <p class="form__input-error">El usuario tiene que ser de 4 a 16 dígitos y solo puede contener numeros, letras y guion bajo.</p>
+          <p class="form__input-error">El nombre tiene que ser de 4 a 16 dígitos y solo puede contener numeros, letras y guion bajo.</p>
           </div>
         <div class="form__group" id="group__email">
             <label for="email" class="form__label">Email</label>
@@ -218,16 +216,16 @@
             <textarea class="form__input" type="text" id="textarea" name="textarea" rows="50" cols="50" placeholder="Escribe algo aquí..."></textarea>
             <i class="form__validate-state fas fa-times-circle"></i>
             </div>
-            <p class="form__input-error">El mensaje puede contener de todo</p>
+            <p class="form__input-error">El mensaje no puede estar vacío</p>
           </div>
 
           <div class="form__message" id="form__message">
-            <p><i class="fas fa-exclamation-triangle"></i> <b>Error:</b> Por favor rellena el formulario correctamente. </p>
+            <p><i class="fas fa-exclamation-triangle"></i> <b>¡Error!:</b> Por favor rellena el formulario correctamente. </p>
           </div>
 
           <div class="form__group form__group-btn-submit">
             <button type="submit" class="form__btn">Enviar</button>
-            <p class="form__message-correct" id="form__message-correct">Formulario enviado exitosamente!</p>
+            <p class="form__message-correct" id="form__message-correct">¡Formulario enviado correctamente!</p>
           </div>       
           </form>
         </section>

@@ -88,7 +88,7 @@ const
   expression = {
     name: /^[a-zA-ZÀ-ÿ\s]{1,40}$/, // Letras y espacios, pueden llevar acentos.
     email: /^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$/,
-    textarea: /^[^$%&|<>#]*$/, // Letras y espacios, pueden llevar acentos.
+    textarea: /^[^$%&|<>#]+$/, // Letras y espacios, pueden llevar acentos.
     phone: /^\d{7,14}$/ // 7 a 14 numeros.
   };
 
@@ -121,7 +121,7 @@ const validateform = (e) => {
 };
 
 // para acceder a la expresion del input nombre o email o etc hay que pasarle 3 parámetros
-const validatefield = (expression, input, field) => {
+function validatefield(expression, input, field) {
   if (expression.test(input.value)) {
     document.getElementById(`group__${field}`).classList.remove("form__group-incorrect");
     document.getElementById(`group__${field}`).classList.add("form__group-correct");
@@ -129,8 +129,7 @@ const validatefield = (expression, input, field) => {
     document.querySelector(`#group__${field} i`).classList.remove("fa-times-circle");
     document.querySelector(`#group__${field} .form__input-error`).classList.remove("form__input-error-active");
     // se conprueban que los datos están todos correctos para enviar
-
-    fields[field] = "true";
+    fields[field] = true;
   } else {
     document.getElementById(`group__${field}`).classList.add("form__group-incorrect");
     document.getElementById(`group__${field}`).classList.remove("form__group-correct");
@@ -138,9 +137,9 @@ const validatefield = (expression, input, field) => {
     document.querySelector(`#group__${field} i`).classList.remove("fa-check-circle");
     document.querySelector(`#group__${field} .form__input-error`).classList.add("form__input-error-active");
 
-    fields[field] = "false";
+    fields[field] = false;
   }
-};
+}
 
 inputs.forEach((input) => {
   input.addEventListener("keyup", validateform);
@@ -157,12 +156,15 @@ textarea.forEach((textarea) => {
 formcontact.addEventListener("submit", (e) => {
   e.preventDefault();
   if (fields.name && fields.email && fields.phone && fields.textarea) {
-    formcontact.reset();
-
+    document.getElementById("form__message").classList.remove("form__message-active");
     document.getElementById("form__message-correct").classList.add("form__message-correct-active");
+    formcontact.reset();
+    document.querySelectorAll(".form__group").forEach(item => (item.classList = "form__group"));
     setTimeout(() => {
-      document.getElementById("form__message-correct").classList.remove("formulario__message-correct-active");
+      document.getElementById("form__message-correct").classList.remove("form__message-correct-active");
     }, 5000);
+  } else if (!fields.name && !fields.email && !fields.phone && fields.textarea) {
+    document.getElementById("form__message").classList.add("form__message-active");
   } else {
     document.getElementById("form__message").classList.add("form__message-active");
   }
