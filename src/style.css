@@ -29,7 +29,7 @@ html {
 
 header {
   z-index: 99;
-  background-image: url("https://cdn.pixabay.com/photo/2015/07/17/22/42/startup-849804_960_720.jpg");
+  background-image: url("/assets/laptop.jpg");
   background-size: cover;
   height: 600px;
   background-repeat: no-repeat;
@@ -57,7 +57,7 @@ header {
 .menu-items a {
   font-weight: bold;
   text-decoration: none;
-  color: var(--bg);
+  color: var(--colorText);
 }
 
 .menu-items .icon {
@@ -65,7 +65,7 @@ header {
 }
 
 a:hover {
-  color: var(--bg-section);
+  color: var(--bg);
 }
 
 .logo {
@@ -98,6 +98,7 @@ a:hover {
 
 .text-parallax h1 {
   font-size: 60px;
+  color: var(--colorText);
 }
 
 .text-parallax p {
@@ -106,7 +107,7 @@ a:hover {
 
 .button-parallax {
   outline: none;
-  background-color: var(--bg-section);
+  background-color: var(--colorText);
   border-radius: 20px;
   border: none;
   -moz-box-shadow: 0 5px 0 0;
@@ -114,8 +115,8 @@ a:hover {
   box-shadow: 0 5px 0 0;
   transition: all 0.1s ease-in-out;
   -webkit-transition: all 0.1s ease-in-out;
-  width: 200px;
-  padding: 2px;
+  width: 300px;
+  padding: 20px;
 }
 
 .button-parallax:hover {
@@ -217,27 +218,33 @@ h2 {
   justify-content: center;
   align-items: center;
   padding: 50px;
-  margin: 50px;
 }
 
 .mission-text {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
+  text-align: center;
+  padding: 20px;
+  margin-top: 20px;
 }
 
 .valor-text {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
-  margin-top: -10px;
+  text-align: center;
+  margin-top: 15px;
+  padding: 10px;
 }
 
 .description-about {
   display: flex;
   flex-direction: column;
   align-items: center;
-  font-size: 20px;
+  font-size: 30px;
 }
 
 .about-content h3 {
@@ -517,7 +524,7 @@ h2 {
   color: #027fb5;
 }
 
-@media (min-width: 772px) {
+@media (max-width: 772px) {
   .icon-social {
     display: flex;
     flex-direction: column;
