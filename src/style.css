@@ -84,12 +84,17 @@ a:hover {
 }
 
 .text-parallax p {
-  font-size: 20px;
+  font-size: 30px;
+  color: var(--colorText);
+}
+
+.text-parallax span {
+  font-size: 30px;
 }
 
 .button-parallax {
   outline: none;
-  background-color: var(--colorText);
+  background-color: var(--bg-section);
   border-radius: 20px;
   border: none;
   -moz-box-shadow: 0 5px 0 0;
@@ -98,7 +103,7 @@ a:hover {
   transition: all 0.1s ease-in-out;
   -webkit-transition: all 0.1s ease-in-out;
   width: 200px;
-  padding: 10px;
+  padding: 20px;
 }
 
 .button-parallax:hover {
@@ -600,7 +605,11 @@ h2 {
   }
 
   .text-parallax h1 {
-    font-size: 50px;
+    font-size: 40px;
+  }
+
+  .text-parallax p {
+    font-size: 20px;
   }
 
   .slider-item-container p {
@@ -618,10 +627,6 @@ h2 {
 
   .team p {
     font-size: 25px;
-  }
-
-  .text-parallax p {
-    font-size: 30px;
   }
 
   .fab {
@@ -668,6 +673,19 @@ h2 {
     font-size: 20px;
   }
 
+  .text-parallax h1 {
+    font-size: 50px;
+  }
+
+  .text-parallax p {
+    font-size: 30px;
+  }
+
+  .button-parallax {
+    padding: 10px;
+    width: 300px;
+  }
+
   .specific-text {
     font-size: 30px;
   }
@@ -695,10 +713,6 @@ h2 {
     height: 40px;
     margin: 5px;
     font-size: 15px;
-  }
-
-  .form--input-error {
-    font-size: 25px;
   }
 
   .form--label {
@@ -773,8 +787,6 @@ h2 {
 
   .menu-items {
     list-style: none;
-    padding: 20px;
-    margin: 10px;
     font-size: 20px;
   }
 
@@ -786,14 +798,15 @@ h2 {
 
   .text-parallax h1 {
     font-size: 60px;
+    margin-top: 90px;
   }
 
   .text-parallax p {
-    font-size: 40px;
+    font-size: 30px;
   }
 
   .button-parallax {
-    width: 400px;
+    width: 300px;
   }
 
   .logo {
@@ -866,17 +879,14 @@ h2 {
 
   .form--input {
     width: 500px;
-    height: 40px;
+    height: 60px;
     margin: 5px;
     font-size: 25px;
   }
 
   #textarea {
     width: 500px;
-  }
-
-  .form--input-error {
-    font-size: 30px;
+    height: 250px;
   }
 
   .form--label {
@@ -894,19 +904,28 @@ h2 {
     padding: 30px;
     font-size: 30px;
   }
+
+  .button-parallax {
+    font-size: 20px;
+  }
 }
 
 @media (min-width: 1280px) {
   .text-parallax h1 {
-    font-size: 60px;
+    font-size: 80px;
   }
 
   .text-parallax p {
     font-size: 50px;
   }
 
+  .text-parallax span {
+    font-size: 40px;
+  }
+
   .button-parallax {
-    width: 500px;
+    width: 400px;
+    padding: 40px;
   }
 
   .logo {
@@ -1029,8 +1048,4 @@ h2 {
 
 .fade-in-element {
   animation: fade-in 1.4s;
-}
-
-.invisible {
-  visibility: hidden;
 }
