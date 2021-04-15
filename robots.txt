@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /assets
+
+Sitemap:https://www.canarylinked.es/sitemap.xml
