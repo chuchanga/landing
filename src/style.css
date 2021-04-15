@@ -65,6 +65,57 @@ a:hover {
   color: var(--bg);
 }
 
+.respmenu {
+  color: white;
+  position: relative;
+}
+
+.icon-responsive {
+  display: inline-block;
+  color: black;
+}
+
+.respmenu input[type="checkbox"],
+.respmenu .fa-bars,
+.respmenu .fa-times {
+  position: absolute;
+  box-sizing: border-box;
+  padding: 0;
+  right: 0;
+  top: 0;
+  margin: 32px;
+  cursor: pointer;
+}
+
+.respmenu input[type="checkbox"] {
+  opacity: 0;
+  display: unset;
+  width: 20px;
+  height: 20px;
+}
+
+.respmenu .fa-bars,
+.respmenu .fa-times {
+  font-size: 24px;
+  pointer-events: none;
+}
+
+.respmenu nav {
+  display: none;
+}
+
+.respmenu input:checked ~ nav {
+  display: block;
+}
+
+.respmenu input:checked + .icon-responsive .fa-bars {
+  display: none;
+}
+
+.respmenu input:not(:checked) + .icon-responsive .fa-times {
+  display: none;
+}
+
 .logo {
   margin-right: 50px;
   width: 90px;
@@ -506,57 +557,6 @@ h2 {
 
 .fa-linkedin:hover {
   color: #027fb5;
-}
-
-.respmenu {
-  color: white;
-  position: relative;
-}
-
-.icon-responsive {
-  display: inline-block;
-  color: black;
-}
-
-.respmenu input[type="checkbox"],
-.respmenu .fa-bars,
-.respmenu .fa-times {
-  position: absolute;
-  box-sizing: border-box;
-  padding: 0;
-  right: 0;
-  top: 0;
-  margin: 32px;
-  cursor: pointer;
-}
-
-.respmenu input[type="checkbox"] {
-  opacity: 0;
-  display: unset;
-  width: 20px;
-  height: 20px;
-}
-
-.respmenu .fa-bars,
-.respmenu .fa-times {
-  font-size: 24px;
-  pointer-events: none;
-}
-
-.respmenu nav {
-  display: none;
-}
-
-.respmenu input:checked ~ nav {
-  display: block;
-}
-
-.respmenu input:checked + .icon-responsive .fa-bars {
-  display: none;
-}
-
-.respmenu input:not(:checked) + .icon-responsive .fa-times {
-  display: none;
 }
 
 @media (min-width: 300px) {
