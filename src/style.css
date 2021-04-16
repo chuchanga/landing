@@ -29,7 +29,7 @@ html {
 
 header {
   z-index: 99;
-  background-image: url("/assets/laptop.jpg");
+  background-image: url("/assets/work.jpeg");
   background-size: cover;
   background-repeat: no-repeat;
   padding: 40px 0;
@@ -55,6 +55,7 @@ header {
   font-weight: bold;
   text-decoration: none;
   color: var(--colorText);
+  font-size: 20px;
 }
 
 .menu-items .icon {
@@ -443,7 +444,7 @@ h2 {
 }
 
 .form--input-error {
-  font-size: 15px;
+  font-size: 13px;
   margin-bottom: 0;
   display: none;
 }
@@ -584,7 +585,7 @@ h2 {
   }
 
   .form--input-error {
-    font-size: 13px;
+    font-size: 10px;
   }
 }
 
@@ -617,7 +618,7 @@ h2 {
   }
 
   .form--input-error {
-    font-size: 13px;
+    font-size: 14px;
   }
 
   .text-parallax h1 {
@@ -708,7 +709,6 @@ h2 {
   }
 
   .button-parallax {
-    padding: 10px;
     width: 300px;
   }
 
@@ -757,6 +757,10 @@ h2 {
 
   #form--message {
     font-size: 25px;
+  }
+
+  .form--message-correct {
+    font-size: 20px;
   }
 
   #textarea {
@@ -935,6 +939,10 @@ h2 {
   }
 
   #form--message {
+    font-size: 30px;
+  }
+
+  .form--message-correct {
     font-size: 30px;
   }
 
