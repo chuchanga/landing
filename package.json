@@ -5,7 +5,7 @@
     "dev": "vite",
     "build": "vite build",
     "serve": "vite preview",
-    "deploy": "cd dist && echo 'www.canarylinked.es' > CNAME && cd.. && gh-pages -d dist"
+    "deploy": "cd dist && echo 'www.canarylinked.es' > CNAME && cd .. && gh-pages -d dist"
   },
   "devDependencies": {
     "eslint": "^7.23.0",
