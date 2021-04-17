@@ -117,10 +117,22 @@ a:hover {
   display: none;
 }
 
+.respmenu input:checked ~ nav .menu-items {
+  text-align: right;
+}
+
+.respmenu input:checked ~ nav .menu-items li:nth-child(n) {
+  margin: 10px 0;
+}
+
+.respmenu input:checked ~ nav .menu-items li:last-child {
+  margin-bottom: 0;
+}
+
 .logo {
   margin-right: 50px;
-  width: 90px;
-  height: 90px;
+  width: 70px;
+  height: 70px;
   object-fit: cover;
 }
 
@@ -131,17 +143,17 @@ a:hover {
 }
 
 .text-parallax h1 {
-  font-size: 40px;
+  font-size: 30px;
   color: var(--colorText);
 }
 
 .text-parallax p {
-  font-size: 30px;
+  font-size: 20px;
   color: var(--colorText);
 }
 
 .text-parallax span {
-  font-size: 30px;
+  font-size: 20px;
 }
 
 .button-parallax {
@@ -587,11 +599,28 @@ h2 {
   .form--input-error {
     font-size: 10px;
   }
+
+  .text-parallax h1 {
+    font-size: 30px;
+  }
+
+  .text-parallax p {
+    font-size: 20px;
+  }
+
+  .button-parallax {
+    width: 200px;
+  }
+
+  .text-parallax span {
+    font-size: 20px;
+  }
 }
 
 @media (min-width: 640px) {
-  .menu-items a {
-    font-size: 30px;
+  .logo {
+    width: 90px;
+    height: 90px;
   }
 
   .form-contact {
@@ -626,6 +655,14 @@ h2 {
   }
 
   .text-parallax p {
+    font-size: 25px;
+  }
+
+  .button-parallax {
+    width: 200px;
+  }
+
+  .text-parallax span {
     font-size: 20px;
   }
 
@@ -701,15 +738,19 @@ h2 {
   }
 
   .text-parallax h1 {
-    font-size: 50px;
+    font-size: 40px;
   }
 
   .text-parallax p {
-    font-size: 30px;
+    font-size: 25px;
   }
 
   .button-parallax {
-    width: 300px;
+    width: 250px;
+  }
+
+  .text-parallax span {
+    font-size: 25px;
   }
 
   .specific-text {
@@ -806,6 +847,11 @@ h2 {
 }
 
 @media (min-width: 1024px) {
+  .logo {
+    width: 100px;
+    height: 100px;
+  }
+
   .respmenu input,
   .respmenu .icon-responsive {
     display: none;
@@ -815,6 +861,10 @@ h2 {
     display: grid;
     grid-auto-flow: column;
     grid-column-gap: 10px;
+  }
+
+  .menu-items a {
+    font-size: 25px;
   }
 
   .menu-items a:hover {
@@ -959,12 +1009,16 @@ h2 {
 }
 
 @media (min-width: 1280px) {
+  .menu-items a {
+    font-size: 30px;
+  }
+
   .text-parallax h1 {
-    font-size: 80px;
+    font-size: 70px;
   }
 
   .text-parallax p {
-    font-size: 50px;
+    font-size: 40px;
   }
 
   .text-parallax span {
