@@ -4,10 +4,11 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="shortcut icon" href="./assets/logo.png" />
+    <meta name="description" content="Landing page destianada a ayudar a personas a adentrarse en el mundo laboral" />
+    <link rel="shortcut icon" href="assets/logo.png" />
     <link rel="stylesheet" href="./style.css" />
-    <script src="./main.js" type="module"></script>
-    <title>CanaryLinked</title>
+    <script src="./index.js" type="module"></script>
+    <title>Landing Page de orientación y búsqueda laboral</title>
   </head>
   <body>
     <header>
@@ -15,8 +16,10 @@
           <img class="logo" src="assets/logo.png" alt="logo" />
           <div class="respmenu ">
             <input type="checkbox"/>
-            <i class="  fas fa-bars"></i>
-            <i class=" fas fa-times"></i>
+            <div class="icon-responsive">
+              <i class="  fas fa-bars"></i>
+              <i class=" fas fa-times"></i>
+            </div>
             <nav>
               <ul class="menu-items" >
                 <li><a href="#orientation">Servicios</a></li>
@@ -25,33 +28,33 @@
                 <li><a href="#contact">Contacto</a></li>
               </ul>
             </nav>
+          </div>
+        </div>
+        <section class="parallax">
+          <div class="text-parallax">
+            <div class="text-photo">
+              <h1>Bienvenidos a CanaryLinked</h1>
+              <p>Empieza tu carrera profesional con nosotros</p>
+            </div>
+            <div class="button-parallax">
+              <a href="#contact" >
+                <span>Accede a nuestra web</span>
+              </a>
             </div>
         </div>
+      </section>
     </header>
     <main>
-    <section class="parallax">
-      <div class="text-parallax">
-        <div class="text-photo">
-          <h1>CanaryLinked</h1>
-          <p>Empieza tu carrera profesional con nosotros</p>
-        </div>
-        <div class="button-parallax">
-          <a href="#contact" >
-            <p>Contáctanos</p>
-          </a>
-        </div>
-    </div>
-  </section>
   <h2>Tenemos a tu disposición</h2>
-  <section id="orientation" class=" section hidden">
-    <img class="section-photo" src="./assets/orientation.jpg" alt="orientation photo" />
+  <section id="orientation" class="section hidden">
+    <img class="section-photo" src="./assets/orientation.jpg" alt="Foto de una persona que necesita orientación laboral" />
     <div class="section-text">
       <h3>Servicios de orientación laboral</h3>
       <p>Explora consejos y tips para familiarizarte en el mundo laboral</p>
     </div>
   </section>
   <section id="tablon" class="section hidden">
-    <img class="section-photo" src="./assets/team.jpg" alt="team" />
+    <img class="section-photo" src="./assets/team.jpg" alt="Foto de varias personas que trabajan en un proyecto" />
     <div class="section-text">
       <h3>Tablón Formativo</h3>
       <p>
@@ -60,8 +63,7 @@
       </p>
     </div>
   </section>
-  <h2>Sobre Nosotros</h2>
-  <a name="about"></a>
+  <h2 id="about">Sobre Nosotros</h2>
   <section class="about-us hidden">
     <div class="description-about">
       <div class="specific-center">
@@ -73,7 +75,7 @@
     <div class="about-content">
     <div class="mission-text">
     <h3>Nuestra Misión</h3>  
-      <svg width="82" height="81" viewBox="0 0 82 81" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <svg width="92" height="95" viewBox="0 0 92 95" fill="none" xmlns="http://www.w3.org/2000/svg">
         <g clip-path="url(#clip0)">
         <path opacity="0.62" d="M50.1097 62.0663C58.3699 53.9131 57.6306 39.9836 48.4748 30.9332C39.3139 21.8852 25.2201 21.1575 16.9573 29.3144C8.70225 37.4612 -4.22044 64.8911 4.93922 73.9404C14.104 82.9908 41.8636 70.2194 50.1161 62.0713" fill="#FBED21"/>
         <path opacity="0.62" d="M52.5159 53.7384C59.3757 46.9673 58.7633 35.397 51.1578 27.8792C43.5471 20.3639 31.8365 19.7602 24.9793 26.5351C18.1271 33.3011 7.38897 56.0862 14.997 63.5926C22.6089 71.1117 45.6714 60.5032 52.512 53.7346" fill="#FBED21"/>
@@ -92,7 +94,7 @@
         </defs>
         </svg>
       <p>
-        En CanaryLinked nos ocupamos de facilitar a estudiantes, profesionales sin experiencia, la incorporación al mundo laboral
+        Nos ocupamos de facilitar a profesionales la incorporación al mundo laboral.
       </p>
     </div>
     <div class="valor-text">           
@@ -110,7 +112,7 @@
       <path d="M59.1873 35.625H32.8127L46 74.2188L59.1873 35.625Z" fill="#DE374B"/>
       </svg>  
       <p>
-        Creemos que el mayor valor se obtiene cuando trabajamos juntos. Creemos en el aprendizaje continuo y en el intercambio de nuestras percepciones e ideas.  
+         Creemos en el aprendizaje continuo y en el intercambio de nuestras percepciones e ideas.  
       </p>   
     </div>
 </div>
@@ -118,34 +120,33 @@
    <h2>Nuestro Equipo</h2>
         <section class="team hidden">
           <div class="employee">
-            <h3>Saúl José Abreu Ruiz</h3>
-            <img class="photo-about" src="./assets/saul.jpeg" alt="person photo"/>
-            <p>Desarrollador FullStack</p>
+            <h3>Desarrollador web</h3>
+            <img class="photo-about" src="./assets/saul.jpeg" alt="Foto de una persona que trabaja para CanaryLinked"/>
+            <p>Saúl José Abreu Ruiz</p>
           </div>
           <div class="employee">
-            <h3>Aythami De Armas Castellano</h3>
-            <img class="photo-about" src="./assets/aythami.jpg" alt="person photo" />
-            <p>Periodista</p>
+            <h3>Periodista</h3>
+            <img class="photo-about" src="./assets/aythami.jpg" alt="Foto de una persona que trabaja para CanaryLinked" />
+            <p>Aythami De Armas Castellano</p>
           </div>
           <div class="employee">
-            <h3>Lucía Muñoz González</h3>
-            <img class="photo-about" src="./assets/lucia.jpg" alt="person photo"/>
-            <p>Coaching</p>
+            <h3>Coaching</h3>
+            <img class="photo-about" src="./assets/lucia.jpg" alt="Foto de una persona que trabaja para CanaryLinked"/>
+            <p>Lucía Muñoz González</p>
           </div>
         </section>
         <h2>Lo que dicen nuestros profesionales</h2>
-        <!--Comentarios-->
         <section class="wrapper hidden">
           <div class="slider" >
             <div id="left-arrow" class="arrow"></div>
             <div class="slider-item">
               <div class="slider-item-container">
-                <img class="image image-one" src="assets/img1.jpg" />
-                  <span>
+                <img class="image image-one" src="assets/photo-comment1.jpg" alt="Foto de una persona comentando lo que le ha parecido la página" />
+                  <p>
                     Gracias a este portal, he encontrado el trabajo que siempre he
                     querido. Gracias a todos los profesionales que hay detrás del
                     programa.
-                  </span>
+                  </p>
                   <p>-Sergio Peñate</p>
                   <div>
                     <i class="fas fa-star"></i>
@@ -158,12 +159,11 @@
               </div>
               <div class="slider-item">
                 <div class="slider-item-container">
-                  <img class="image image-two" src="assets/img2.jpg" />
-                  <span>
+                  <img class="image image-two" src="assets/photo-comment2.jpg" alt="Foto de una persona comentando lo que le ha parecido la página"/>
+                  <p>
                     Este portal me ha ayudado muchísimo para encontrar mi primer
                     trabajo, gracias por las sesiones de orientación laboral y
-                    consejos.</span
-                  >
+                    consejos.</p>
                   <p>-Daniela Pérez</p>
                   <div>
                     <i class="fas fa-star"></i>
@@ -176,10 +176,8 @@
             </div>
           <div id="right-arrow" class="arrow"></div>
         </section>
-        <h2>Contacta con nosotros</h2>
+        <h2 id="contact">Contacta con nosotros</h2>
         <section class="form-contact hidden" >
-          <a name="contact"></a>
-     
           <form
             id="form"
             class="form-components "
@@ -187,47 +185,47 @@
             name="form"
             method="get"
           >   
-          <div class="form__group" id="group__name">
-            <label for="name" class="form__label">Nombre</label>
-            <div class="form__group-input">
-            <input type="text" class="form__input" name="name" id="name"  />
-            <i class="form__validate-state fas fa-times-circle"></i>
+          <div class="form--group" id="group--name">
+            <label for="name" class="form--label">Nombre</label>
+            <div class="form--group-input">
+            <input type="text" class="form--input" name="name" id="name"  />
+            <i class="form--validate-state fas fa-times-circle"></i>
           </div>
-          <p class="form__input-error">El usuario tiene que ser de 4 a 16 dígitos y solo puede contener numeros, letras y guion bajo.</p>
+          <p class="form--input-error">El nombre puede llevar letras, espacios y acentos.</p>
           </div>
-        <div class="form__group" id="group__email">
-            <label for="email" class="form__label">Email</label>
-            <div class="form__group-input">
-            <input class="form__input"  id="emailAddress" name="email" type="email" />
-            <i class="form__validate-state fas fa-times-circle"></i>
+        <div class="form--group" id="group--email">
+            <label for="email" class="form--label">Email</label>
+            <div class="form--group-input">
+            <input class="form--input"  id="emailAddress" name="email" type="email" />
+            <i class="form--validate-state fas fa-times-circle"></i>
             </div>
-            <p class="form__input-error">El correo solo puede contener letras, numeros, puntos, guiones y guion bajo.</p>
+            <p class="form--input-error">El correo solo puede contener letras, numeros, puntos y guiones.</p>
         </div>
-        <div class="form__group" id="group__phone">
-          <label for="phone" class="form__label">Teléfono</label>
-          <div class="form__group-input">
-            <input type="text" class="form__input" name="phone" id="phone" >
-            <i class="form__validate-state fas fa-times-circle"></i>
+        <div class="form--group" id="group--phone">
+          <label for="phone" class="form--label">Teléfono</label>
+          <div class="form--group-input">
+            <input type="text" class="form--input" name="phone" id="phone" >
+            <i class="form--validate-state fas fa-times-circle"></i>
           </div>
-          <p class="form__input-error">El telefono solo puede contener numeros y el maximo son 14 dígitos.</p>
+          <p class="form--input-error">El telefono solo puede contener numeros.</p>
         </div>
 
-        <div class="form__group" id="group__textarea">
-            <label for="textarea" class="form__label">Mensaje</label>
-            <div class="form__group-input">
-            <textarea class="form__input" type="text" id="textarea" name="textarea" rows="50" cols="50" placeholder="Escribe algo aquí..."></textarea>
-            <i class="form__validate-state fas fa-times-circle"></i>
+        <div class="form--group" id="group--textarea">
+            <label for="textarea" class="form--label">Mensaje</label>
+            <div class="form--group-input">
+            <textarea class="form--input" type="text" id="textarea" name="textarea" rows="50" cols="50" placeholder="Escribe algo aquí..."></textarea>
+            <i class="form--validate-state fas fa-times-circle"></i>
             </div>
-            <p class="form__input-error">El mensaje puede contener de todo</p>
+            <p class="form--input-error">El mensaje no puede estar vacío</p>
           </div>
 
-          <div class="form__message" id="form__message">
-            <p><i class="fas fa-exclamation-triangle"></i> <b>Error:</b> Por favor rellena el formulario correctamente. </p>
+          <div class="form--message" id="form--message">
+            <p><i class="fas fa-exclamation-triangle"></i> <b>¡Error!:</b> Por favor rellena el formulario correctamente. </p>
           </div>
 
-          <div class="form__group form__group-btn-submit">
-            <button type="submit" class="form__btn">Enviar</button>
-            <p class="form__message-correct" id="form__message-correct">Formulario enviado exitosamente!</p>
+          <div class="form--group form--group-btn-submit">
+            <button type="submit" class="form--btn">Enviar</button>
+            <p class="form--message-correct" id="form--message-correct">¡Formulario enviado correctamente!</p>
           </div>       
           </form>
         </section>
