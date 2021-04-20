@@ -952,6 +952,7 @@ h2 {
   .team {
     display: flex;
     flex-direction: row;
+    justify-content: space-evenly;
   }
 
   .team h3 {
