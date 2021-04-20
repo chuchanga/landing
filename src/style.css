@@ -783,7 +783,7 @@ h2 {
 
   .slider-item-container p {
     text-align: center;
-    font-size: 15px;
+    font-size: 25px;
   }
 
   .form--input {
@@ -807,10 +807,6 @@ h2 {
 
   #textarea {
     width: 300px;
-  }
-
-  .slider-item-container p {
-    font-size: 25px;
   }
 
   .about-content h3 {
