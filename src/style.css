@@ -223,10 +223,6 @@ h2 {
   padding: 10px 0;
 }
 
-.section:nth-child(2n) .section-photo {
-  right: 20px;
-}
-
 .section h3 {
   margin: 10px;
   font-size: 25px;
@@ -243,6 +239,10 @@ h2 {
   width: 250px;
   height: 250px;
   object-fit: cover;
+}
+
+.section:nth-child(2n) .section-photo {
+  right: 20px;
 }
 
 .section-text {
@@ -866,10 +866,15 @@ h2 {
     display: grid;
     grid-auto-flow: column;
     grid-column-gap: 10px;
+    list-style: none;
+    font-size: 20px;
   }
 
   .menu-items a {
     font-size: 25px;
+    font-weight: bold;
+    text-decoration: none;
+    color: var(--colorText);
   }
 
   .menu-items a:hover {
@@ -878,17 +883,6 @@ h2 {
 
   .respmenu nav {
     display: unset;
-  }
-
-  .menu-items {
-    list-style: none;
-    font-size: 20px;
-  }
-
-  .menu-items a {
-    font-weight: bold;
-    text-decoration: none;
-    color: var(--colorText);
   }
 
   .text-parallax h1 {
@@ -902,11 +896,7 @@ h2 {
 
   .button-parallax {
     width: 300px;
-  }
-
-  .logo {
-    width: 100px;
-    height: 100px;
+    font-size: 20px;
   }
 
   h2 {
@@ -1012,10 +1002,6 @@ h2 {
     margin: 30px;
     padding: 30px;
     font-size: 30px;
-  }
-
-  .button-parallax {
-    font-size: 20px;
   }
 }
 
