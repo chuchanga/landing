@@ -210,6 +210,7 @@ h2 {
   text-shadow:
     -1px 0 5px #c2c2c2,
     1px 0 5px #c2c2c2;
+  padding: 10px;
 }
 
 .section {
@@ -218,7 +219,6 @@ h2 {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  max-width: 1480px;
   margin: auto;
   padding: 10px 0;
 }
@@ -271,7 +271,6 @@ h2 {
   justify-content: center;
   align-items: center;
   text-align: center;
-  padding: 10px;
 }
 
 .valor-text {
@@ -549,7 +548,7 @@ h2 {
 }
 
 .fab {
-  margin: 40px;
+  margin: 30px;
   font-size: 30px;
 }
 
@@ -684,10 +683,6 @@ h2 {
     font-size: 20px;
   }
 
-  .fab {
-    font-size: 40px;
-  }
-
   .bg-footer h3 {
     font-size: 30px;
   }
@@ -703,10 +698,6 @@ h2 {
 
   .about-content p {
     font-size: 20px;
-  }
-
-  .about-content h3 {
-    font-size: 25px;
   }
 
   .description-about h3 {
@@ -764,8 +755,8 @@ h2 {
   }
 
   .photo-about {
-    width: 400px;
-    height: 400px;
+    width: 300px;
+    height: 300px;
   }
 
   .image {
@@ -826,7 +817,7 @@ h2 {
   }
 
   .fab {
-    font-size: 50px;
+    font-size: 40px;
   }
 
   .team h3 {
@@ -1052,15 +1043,11 @@ h2 {
   }
 
   .section-text {
-    max-width: 1280px;
+    font-size: 35px;
   }
 
   .section:nth-child(2n) {
     flex-direction: row-reverse;
-  }
-
-  .specific-text {
-    font-size: 35px;
   }
 
   .about-content h3 {
